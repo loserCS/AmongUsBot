@@ -68,17 +68,10 @@ class HelpCog(commands.Cog):
         embed = self.help_embed('__Queue Bot Commands__')
         await ctx.send(embed=embed)
 
-    #@commands.Cog.listener()
-    #async def on_message(self, message):
-    #    """ Send the help embed if the bot is mentioned. """
-    #    if self.bot.user in message.mentions:
-    #        await message.channel.send(embed=self.help_embed('__Queue Bot Commands__'))
-
     @commands.command(brief='Display basic info about this bot')
     async def info(self, ctx):
         """ Display the info embed. """
         description = '_Bot used for among us queues_\n'
-        #description += '\nJoin the support server [here](https://discordapp.com/invite/tskeyDA)'
 
 
         description += f'\nSource code can be found [here]({GITHUB}) on GitHub'
