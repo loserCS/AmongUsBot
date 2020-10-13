@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+/run.py
+/guild_data.json
