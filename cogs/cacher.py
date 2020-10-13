@@ -88,6 +88,3 @@ class CacherCog(commands.Cog):
         """save guild data on disconnect to be reloaded when ready"""
         self.save()
         print(f'{self.timestamp()}Saved guild data')
-        
-
-
